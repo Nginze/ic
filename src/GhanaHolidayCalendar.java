@@ -1,3 +1,4 @@
+package src;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +8,10 @@ public class GhanaHolidayCalendar {
 
     public GhanaHolidayCalendar() {
         this.holidays = new ArrayList<>();
+    }
+
+    public void addHoliday(Holiday holiday) {
+        holidays.add(holiday);
     }
 
     public boolean isHoliday(LocalDate date) {
