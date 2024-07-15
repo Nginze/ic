@@ -11,4 +11,4 @@ done
 
 # Change to the dist directory and run the Main class
 cd dist
-java Main
+java src/Main
