@@ -23,6 +23,16 @@ public class GSETradingChecker {
         holidayCalendar.addHoliday(new Holiday("Boxing Day", LocalDate.of(2024, 12, 26)));
     }
 
+    /**
+     * The function `isMarketOpen` checks if the given `LocalDateTime` falls within weekday trading hours
+     * and is not a holiday.
+     * 
+     * @param dateTime The `dateTime` parameter is a `LocalDateTime` object representing a specific date
+     * and time.
+     * @return The method `isMarketOpen` returns a boolean value indicating whether the market is open at
+     * the specified `LocalDateTime` based on the conditions of being a weekday, not a holiday, and within
+     * trading hours.
+     */
     public boolean isMarketOpen(LocalDateTime dateTime) {
         DayOfWeek day = dateTime.getDayOfWeek();
         boolean isWeekday = day != DayOfWeek.SATURDAY && day != DayOfWeek.SUNDAY;

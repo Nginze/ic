@@ -10,6 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         LocalDateTime dateTime = null;
 
+        // Prompt the user to enter a date and time (application loop)
         do {
             System.out.println(
                     "Enter a date and time in the format 'yyyy-MM-dd HH:mm' or 'now' for the current date and time:");

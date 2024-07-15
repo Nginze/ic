@@ -10,6 +10,13 @@ public class TradeExecutor {
         this.tradingHoursChecker = new GSETradingChecker();
     }
 
+    /**
+     * The `executeTrade` function checks if the market is open at a given `LocalDateTime` and prints a
+     * message accordingly.
+     * 
+     * @param dateTime The `dateTime` parameter is an instance of the `LocalDateTime` class, representing a
+     * date and time without a time zone.
+     */
     public void executeTrade(LocalDateTime dateTime) {
         String formattedDateTime = dateTime.format(this.formatter);
 

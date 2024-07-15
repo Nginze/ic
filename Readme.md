@@ -10,7 +10,11 @@ To run this application, follow these steps:
 
 1. Open a terminal.
 
-2. Navigate to the root directory of the project:
+2. Navigate to the root directory of the project (after cloning):
+
+```bash
+git clone https://github.com/Nginze/ic.git
+```
 
 ```bash
 cd path/to/project
